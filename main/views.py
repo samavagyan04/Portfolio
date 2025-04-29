@@ -25,9 +25,7 @@ def HomePage(request):
             )
             email_for_me = EmailMessage(
                 subject=f'Նամակ {request.POST.get("name")}ից',
-                body= f'''{request.POST.get("name")},
-                        {request.POST.get("email")},
-                        {request.POST.get("message")}''',
+                body= f'''{request.POST.get("name")}, {request.POST.get("email")}, {request.POST.get("message")}''',
                 from_email=EMAIL_HOST_USER,
                 to = [EMAIL_HOST_USER]
             )

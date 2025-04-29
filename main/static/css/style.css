@@ -250,9 +250,10 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
   
   #about img {
 	float: right;
-	max-width: 100%;
-	height: auto;
-  }
+	width: auto; /* Լայնությունը ավտոմատ՝ համամասնությունը պահպանելու համար */
+	height: 440px; /* Փոխիր այս արժեքը՝ ուզած երկարությունը ստանալու համար */
+}
+
   
   #about p {
 	margin-top: 20px;
